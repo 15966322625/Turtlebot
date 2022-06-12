@@ -1,0 +1,4 @@
+C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\wifi-上位机\temp\WitMotion-Udp.exe,C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\wifi-上位机\WitMotion-Udp.exe
+C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\wifi-上位机\temp\configColumn.ini,C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\wifi-上位机\configColumn.ini
+C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\wifi-上位机\temp\configEN.ini,C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\wifi-上位机\configEN.ini
+C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\wifi-上位机\temp\SocketCommunication.xml,C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\wifi-上位机\SocketCommunication.xml

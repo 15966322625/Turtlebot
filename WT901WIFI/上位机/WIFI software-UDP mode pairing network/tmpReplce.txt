@@ -1,0 +1,4 @@
+C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\WIFI software-UDP mode pairing network\temp\WitMotion-Udp.exe,C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\WIFI software-UDP mode pairing network\WitMotion-Udp.exe
+C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\WIFI software-UDP mode pairing network\temp\configColumn.ini,C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\WIFI software-UDP mode pairing network\configColumn.ini
+C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\WIFI software-UDP mode pairing network\temp\configEN.ini,C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\WIFI software-UDP mode pairing network\configEN.ini
+C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\WIFI software-UDP mode pairing network\temp\SocketCommunication.xml,C:\Users\15492\Desktop\turtlebot\WT901WIFI\上位机\WIFI software-UDP mode pairing network\SocketCommunication.xml

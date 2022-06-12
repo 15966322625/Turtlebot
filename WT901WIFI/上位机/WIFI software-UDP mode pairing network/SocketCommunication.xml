@@ -1,0 +1,282 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SocketCommunication</name>
+    </assembly>
+    <members>
+        <member name="P:SocketCommunication.Tcp_Client.ReceiveBufferSize">
+            <summary>
+            接收缓冲区大小(字节数)
+            </summary>
+        </member>
+        <member name="P:SocketCommunication.Tcp_Client.SendBufferSize">
+            <summary>
+            发送缓冲区大小(字节数)
+            </summary>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Client.getLocalip">
+            <summary>
+            获取本地IP
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Client.bConnect(System.String,System.Int32,System.String@)">
+            <summary>
+            连接服务器
+            </summary>
+            <param name="sIpAddress">服务器IP</param>
+            <param name="iPort">端口</param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Client.bolSendData(System.Byte[],System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="sendBytes"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SocketCommunication.Tcp_Server.ReceiveBufferSize">
+            <summary>
+            接收缓冲区大小(字节数)
+            </summary>
+        </member>
+        <member name="P:SocketCommunication.Tcp_Server.SendBufferSize">
+            <summary>
+            发送缓冲区大小(字节数)
+            </summary>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Server.getLocalip">
+            <summary>
+            获取本地IP
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Server.StartListen(System.Int32,System.String@,System.Int32)">
+            <summary>
+            监听端口 true表示启动服务成功
+            </summary>
+            <param name="iPort">监听端口</param>
+            <param name="ErrMsg"></param>
+            <param name="backLog">一个时间同时连接数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Server.StartListen(System.String,System.Int32,System.String@,System.Int32)">
+            <summary>
+            监听端口 true表示启动服务成功
+            </summary>
+            <param name="sListenIp">监听IP地址</param>
+            <param name="iPort">监听端口</param>
+            <param name="ErrMsg"></param>
+            <param name="backLog">一个时间同时连接数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Server.Accept_Socket(System.Object)">
+            <summary>
+            建立连接
+            </summary>
+            <param name="o"></param>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Server.ReceiveMsg(System.Object)">
+            <summary>
+            接收数据
+            </summary>
+            <param name="o"></param>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Server.bolSendData(System.String,System.Byte[],System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="sIpAddress">客户IP及端口,格式：IP:PORT 如：192.168.0.18:8899</param>
+            <param name="sendBytes"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Tcp_Server.bolSendData(System.String,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="sIpAddress">客户IP及端口,格式：IP:PORT 如：192.168.0.18:8899</param>
+            <param name="sendMsg"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SocketCommunication.Udp.ReceiveBufferSize">
+            <summary>
+            接收缓冲区大小(字节数)
+            </summary>
+        </member>
+        <member name="P:SocketCommunication.Udp.SendBufferSize">
+            <summary>
+            发送缓冲区大小(字节数)
+            </summary>
+        </member>
+        <member name="M:SocketCommunication.Udp.StartListen(System.Int32,System.String@)">
+            <summary>
+            作为服务监听端口 true表示启动服务成功
+            </summary>
+            <param name="iPort">监听端口</param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Udp.bolSendData(System.String[],System.Byte[],System.String@)">
+            <summary>
+            多个地址通讯 字节数组发送
+            </summary>
+            <param name="sIpAdress">格式：IP:PORT 如：192.168.0.18:8899</param>
+            <param name="sendBytes"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Udp.bolSendData(System.String,System.Int32,System.Byte[],System.String@)">
+            <summary>
+            单个地址通讯 字节数组发送
+            </summary>
+            <param name="sIpAdress">Ip地址</param>
+            <param name="iPort">端口</param>
+            <param name="sendBytes"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Udp.bolSendData(System.String,System.Int32,System.String,System.String@)">
+            <summary>
+            单个地址通讯 字符串发送
+            </summary>
+            <param name="sIpAdress"></param>
+            <param name="iPort"></param>
+            <param name="sendMsg"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Udp.bolSendData(System.Int32,System.Byte[],System.String@)">
+            <summary>
+            本机通讯  字节数组发送
+            </summary>
+            <param name="iPort"></param>
+            <param name="sendBytes"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Udp.bolSendData(System.Int32,System.String,System.String@)">
+            <summary>
+            本机通讯  字符串发送
+            </summary>
+            <param name="iPort"></param>
+            <param name="sendMsg"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.Udp.bolSendData(System.String[],System.String,System.String@)">
+            <summary>
+            多个地址通讯 字符串发送
+            </summary>
+            <param name="sIpAdress">格式：IP:PORT 如：192.168.0.18:8899</param>
+            <param name="sendMsg"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="P:SocketCommunication.WebSocket.ReceiveBufferSize">
+            <summary>
+            接收缓冲区大小(字节数)
+            </summary>
+        </member>
+        <member name="P:SocketCommunication.WebSocket.SendBufferSize">
+            <summary>
+            发送缓冲区大小(字节数)
+            </summary>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.StartListen(System.Int32,System.String@,System.Int32)">
+            <summary>
+            监听端口 true表示启动服务成功
+            </summary>
+            <param name="iPort">监听端口</param>
+            <param name="ErrMsg"></param>
+            <param name="backLog">一个时间同时连接数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.StartListen(System.String,System.Int32,System.String@,System.Int32)">
+            <summary>
+            监听端口 true表示启动服务成功
+            </summary>
+            <param name="sListenIp">监听IP地址</param>
+            <param name="iPort">监听端口</param>
+            <param name="ErrMsg"></param>
+            <param name="backLog">一个时间同时连接数</param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.Accept_Socket(System.Object)">
+            <summary>
+            建立连接
+            </summary>
+            <param name="o"></param>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.ReceiveMsg(System.Object)">
+            <summary>
+            接收数据
+            </summary>
+            <param name="o"></param>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.PackHandShakeData(System.String)">
+            <summary>
+            打包握手信息
+            </summary>
+            <param name="secKeyAccept">Sec-WebSocket-Accept</param>
+            <returns>数据包</returns>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.bolAnalyticData(System.Byte[],System.Int32,System.Byte[]@)">
+            <summary>
+            解析客户端数据包
+            </summary>
+            <param name="recBytes">服务器接收的数据包</param>
+            <param name="recByteLength">有效数据长度</param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.GetSecKeyAccetp(System.Byte[],System.Int32)">
+            <summary>
+            生成Sec-WebSocket-Accept
+            </summary>
+            <param name="handShakeText">客户端握手信息</param>
+            <returns>Sec-WebSocket-Accept</returns>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.PackData(System.String)">
+            <summary>
+            打包服务器数据
+            </summary>
+            <param name="message">数据</param>
+            <returns>数据包</returns>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.PackData(System.Byte[])">
+            <summary>
+            打包服务器数据
+            </summary>
+            <param name="message">数据</param>
+            <returns>数据包</returns>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.sendPackData(System.Byte[],System.Int32)">
+            <summary>
+            WebSocket Send 发送数据到客户端,打包服务器数据
+            </summary>
+            <param name="bytes">要发送的数据</param>
+            <param name="sendMax">每次发送的最大数据包</param>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.bolSendData(System.String,System.Byte[],System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="sIpAddress">客户IP及端口,格式：IP:PORT 如：192.168.0.18:8899</param>
+            <param name="sendBytes"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SocketCommunication.WebSocket.bolSendData(System.String,System.String,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="sIpAddress">客户IP及端口,格式：IP:PORT 如：192.168.0.18:8899</param>
+            <param name="sendMsg"></param>
+            <param name="ErrMsg"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
